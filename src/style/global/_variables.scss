@@ -1,0 +1,22 @@
+:root {
+    // Colors
+
+    --color-background: 0 0% 96%; // #F5F5F5
+    --color-text: 0 0% 20%; // #333333
+    --color-primary: 215 50% 23%; // #1D3557
+    --color-secondary: 348 80% 51%; // #E61F48
+
+    // Font
+
+    --font-content: 'Roboto', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+    
+}
+
+[data-theme='dark'] {
+    --color-background: 215 50% 23%; // #1D3557
+    --color-text: 0 0% 96%; // #F5F5F5
+    --color-primary: 182 43% 76%; // #A8DADC
+
+
+}

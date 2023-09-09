@@ -1,0 +1,78 @@
+.body {
+  width: 100%;
+  height: 24.9375em;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    'header header'
+    'stack stack'
+    'live-site github'
+    'title title'
+    'content content';
+
+  &__header {
+    grid-area: header;
+    margin-top: 1.25em;
+    font-family: var(--font-heading);
+    font-size: 1.5625rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__stack {
+    grid-area: stack;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.625em 0;
+    border-top: 0.00625em solid hsl(var(--color-text));
+    border-bottom: 0.00625em solid hsl(var(--color-text));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &--stack-item {
+      font-size: 0.875rem;
+      font-weight: 300;
+    }
+  }
+
+  &__live-link,
+  &__github {
+    text-align: center;
+  }
+
+  &__live-link {
+    grid-area: live-site;
+
+  }
+
+  &__github {
+    grid-area: github;
+    
+
+  }
+
+  &__title {
+    grid-area: title;
+    width: 80%;
+    margin: 0.5em 2em;
+   
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+&__content {
+    grid-area: content;
+    width: 80%;
+    margin: 0.5em 2em;
+    margin-top: -1em;
+    font-family: var(--font-content);
+    font-size: 0.64rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+}
